@@ -101,3 +101,7 @@ div.slideshow img {
     height: auto;
     padding: 3%;
 }
+
+span.question {
+    font-weight: bold;
+}
