@@ -93,15 +93,33 @@ div.slideshow img {
 }
 
 .image_text_container p {
-    vertical-align: ;
+    padding: 3%;
 }
 
 .image_text_container img {
     width: 30%;
     height: auto;
-    padding: 3%;
+    padding: 0% 3%;
 }
 
 span.question {
     font-weight: bold;
+}
+
+span.quote {
+    font-style: italic;
+}
+
+.video_wrapper {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+}
+
+.video_wrapper#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
