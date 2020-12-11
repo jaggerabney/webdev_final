@@ -1,17 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 html, body {
     height: 100%;
 }
 
-body {
-    margin: 0px;
+body::before {
+    content: ""; 
+    z-index: -1; 
+    position: inherit;
+    left: inherit;
+    top: inherit;
+    width: inherit;
+    height: inherit;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(5px);
 }
 
-.bg_image {
-    background: url(screenshots/gallery_sc7.jpg) no-repeat center center fixed;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    height: 100%;
+body {
+    margin: 0px;
+    background-image: url("screenshots/gallery_sc7.jpg");
+    background-size: 0 0;  
     width: 100%;
-    filter: blur(4px);
+    height: 100%;
+    position: fixed; 
 }
+
+div.centered {
+    width: 70%;
+    background: white;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#navbar {
+    border-radius: 0px 0px 30px 30px;
+}
+
+#navbar h1 {
+    padding: 5%;
+    text-align: center;
+}
+
+#navbar ul, li {
+    display: inline;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+#navbar ul li {
+    padding: 0 2%;
+}
+
+#content {
+    margin-top: 5%;
+    border-radius: 30px;
+}
+
+#content p {
+    padding: 3%;
+}
+
