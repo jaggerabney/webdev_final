@@ -156,3 +156,18 @@ img#image_map_picture {
     min-height: 600px;
     padding: 0 3% 3% 0;
 }
+
+.contact_wrapper {
+    margin: 0% 3%;
+    padding: 0% 1%;
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+}
+
+#submit_button {
+    padding: 0.5%;
+}
+
+input {
+    margin: 2% 0%;
+}
