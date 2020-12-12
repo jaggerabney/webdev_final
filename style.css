@@ -123,6 +123,16 @@ div.slideshow img {
     padding: 3%;
 }
 
+#content .image_text_container p.right {
+    padding: 3% 9% 3% 3%;
+    text-align: left;
+}
+
+#content .image_text_container p.left {
+    padding: 3% 3% 3% 9%;
+    text-align: right;
+}
+
 .image_text_container img {
     width: 30%;
     height: auto;
