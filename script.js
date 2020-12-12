@@ -30,3 +30,4 @@ function fade(element, opacityIncrement, step, speed) {
         element.style.opacity = currentOpacity;
     }, speed);
 }
+

@@ -22,11 +22,69 @@
                 <li><a href="faqs.html">FAQs</a></li>
             </ul>
         </div>
-    </body>
 
-    <div class="centered" id="footer">
-        <footer>
-            <p>© Undead Settlement Photography, AOF 323,986</p>
-        </footer>
-    </div>
+        <div class="centered" id="content">
+            <p>
+                Undead Settlement Photography has many locations in the Greater Lothric Area. 
+                Click on the map to see the closest location to you!
+            </p>
+
+            <div class="location_wrapper">
+                <div class="image_map_container">
+                    <img src="screenshots/map.jpg" alt="Something went wrong!" usemap="#map" id="image_map_picture">
+                    <map name="map" id="image_map">
+                        <area shape="rect" coords="0, 0, 416, 270" alt="Lothric Castle" href="javascript:changeInfo('screenshots/locations_dragonbarracks.jpg');">
+                        <area shape="rect" coords="0, 270, 416, 430" alt="Undead Settlement" href="javascript:changeInfo('screenshots/locations_cliffunderside.jpg');">
+                        <area shape="rect" coords="0, 430, 416, 600" alt="Cathedral of the Deep" href="javascript:changeInfo('screenshots/locations_cleansingchapel.jpg');">
+                    </map>
+                </div>
+
+                <div class="locations_information">
+                    <img src="screenshots/locations_cleansingchapel.jpg" id="location_image">
+                    <p id="location_name"></p>
+                    <p id="location_address"></p>
+                    <p id="location_contactinfo"></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="centered" id="footer">
+            <footer>
+                <p>© Undead Settlement Photography, AOF 323,986</p>
+            </footer>
+        </div>
+
+        <script>
+            function changeInfo(imageURL) {
+                var locationImage = document.getElementById("location_image");
+                var locationName = document.getElementById("location_name");
+                var locationAddress = document.getElementById("location_address");
+                var locationContactInfo = document.getElementById("location_contactinfo");
+                
+                locationImage.src = imageURL; // this is done regardless of which area is picked, hence why its 
+                                              // outside of the switch statement
+
+                switch (imageURL) {
+                    case "screenshots/locations_dragonbarracks.jpg":
+                        locationName.innerHTML = "Grand Archives Location";
+                        locationAddress.innerHTML = "1312 Dragon Barracks Road<br>Oceiros, LO, 17090";
+                        locationContactInfo.innerHTML = "Phone: 555-2560<br>Hours: 9am - 5pm, Mon - Fri";
+                        break;
+                    case "screenshots/locations_cliffunderside.jpg":
+                        locationName.innerHTML = "Home Office";
+                        locationAddress.innerHTML = "7917 Cliff Underside Way<br>Wolnir, LO, 17180";
+                        locationContactInfo.innerHTML = "Phone: 555-2723<br>Hours: 9am - 5pm, Mon - Sat";
+                        break;
+                    case "screenshots/locations_cleansingchapel.jpg": 
+                        locationName.innerHTML = "Cathedral of the Deep Location";
+                        locationAddress.innerHTML = "23227 Cleansing Chapel Lane<br>Aldritch, LO, 17180";
+                        locationContactInfo.innerHTML = "Phone: 555-2974<br>Hours: 8am - 4pm, Tues - Sun";
+                        break;
+                    }
+            }
+
+            // Populates HTML elements on window load
+            changeInfo("screenshots/locations_dragonbarracks.jpg");
+        </script>
+    </body>
 </html>
