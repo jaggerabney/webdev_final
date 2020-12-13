@@ -23,7 +23,11 @@
             </ul>
         </div>
 
-        <div class="centered" id="content">
+        <!-- 
+            Inline style is to provide padding below video 
+            TODO: change content layout to fix this and not be doodoo
+        -->
+        <div class="centered" id="content" style="padding-bottom: 3%;">
             <p>
                 Not convinced? Check out some of the pictures that our photographers have taken!
             </p>
@@ -47,7 +51,13 @@
             </p>
 
             <!-- TODO: add video! -->
-            
+            <div class="slideshow">
+                <div class="video_wrapper_outer">
+                    <div class="video_wrapper_inner">
+                        <iframe id="video" src="https://www.youtube.com/embed/Z6VxRZRCN7c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="centered" id="footer">

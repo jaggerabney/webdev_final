@@ -23,8 +23,7 @@ body {
 div.centered {
     width: 80%;
     background: rgb(196, 196, 196);
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: auto;
 }
 
 #navbar {
@@ -68,10 +67,18 @@ div.centered {
     font-style: italic;
 }
 
-div.slideshow img {
-    display: block;
+.slideshow {
+    background-color: rgb(227, 227, 227);
+    padding: 1%;
+    border-radius: 10px;
     max-width: 60%;
+    height: auto;
     margin: auto;
+}
+
+div.slideshow img {
+    width: 100%;
+    display: block;
 }
 
 #footer {
@@ -147,13 +154,21 @@ span.quote {
     font-style: italic;
 }
 
-.video_wrapper {
+.video_wrapper_inner {
     position: relative;
     height: 0;
+    min-width: 60%;
+    margin: auto;
     padding-bottom: 56.25%; /* 16:9 */
+    overflow: hidden;
 }
 
-.video_wrapper#video {
+.video_wrapper_outer {
+    width: 100%;
+    margin: auto;
+}
+
+.video_wrapper_inner iframe {
     position: absolute;
     top: 0;
     left: 0;
