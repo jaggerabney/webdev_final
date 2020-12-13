@@ -61,6 +61,35 @@ div.centered {
     padding: 3%;
 }
 
+#content table, th, td {
+    padding: 1%;
+}
+
+#content table {
+    margin: auto;
+    width: 70%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#content tr:nth-child(even) {
+    background-color: rgb(215, 215, 215);
+}
+
+#content th {
+    border: 1px solid black;
+    background-color: #8c8aff;
+}
+
+#content tr:hover {
+    background-color: rgb(227, 227, 227);
+}
+
+#content td {
+    border: 1px solid rgb(100, 100, 100);
+    text-align: center;
+}
+
 #content h3 {
     padding-bottom: 3%;
     text-align: center;
