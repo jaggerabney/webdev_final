@@ -158,8 +158,14 @@ div.slideshow img {
 }
 
 #footer p {
+    float: right;
     text-align: right;
     padding: 2%;
+}
+
+#footer div {
+    padding: 2%;
+    float: left;
 }
 
 .location_wrapper {
