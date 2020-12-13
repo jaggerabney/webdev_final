@@ -42,74 +42,61 @@
     </head>
 
     <body>
-        <div class="centered" id="navbar">
-            <header>
-                <h1>Undead Settlement Photography</h1>
-            </header>
-            <ul id="navbar_ul" onmouseover="console.log('bleh');" onmouseout="activateActivePage('About')">
-                <li class="active_page"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="locations.html">Locations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
-        </div>
-
-        <div class="centered" id="content">
-            <p>
-                Are you located in the Lothric area and in need of professional, quality photography? 
-                Are you looking to capture your next wedding, graduation, or boss fight? 
-                Are you in need of an affordable, dependable lensman who won’t drain you of your souls? 
-                Well, you’ve come to the right place!
-            </p>
-
-            <!-- TODO: make this not look like ass -->
-            <div class="slideshow">
-                <img class="slide" src="screenshots/home_sc1.jpg">
-                <img class="slide" src="screenshots/home_sc2.jpg">
-                <img class="slide" src="screenshots/home_sc3.jpg">
-                <img class="slide" src="screenshots/home_sc4.jpg">
-                <img class="slide" src="screenshots/home_sc5.jpg">
-                <img class="slide" src="screenshots/home_sc6.jpg">
-                <img class="slide" src="screenshots/home_sc7.jpg">
-                <img class="slide" src="screenshots/home_sc8.jpg">
+        <div class="page_wrapper">
+            <div class="centered" id="navbar">
+                <header>
+                    <h1>Undead Settlement Photography</h1>
+                </header>
+                <ul id="navbar_ul" onmouseover="console.log('bleh');" onmouseout="activateActivePage('About')">
+                    <li class="active_page"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
             </div>
 
-            <p>
-                Undead Settlement Photography is a local, 
-                on-site photography company serving the greater Lothric area for over 300,000 cycles! 
-                We are staffed by only the best, most dedicated craftsmen, 
-                with an 100% No-Hollow Guarantee™! 
-                And most of all, we strive to provide the highest quality of service that the Age of Fire has to offer! 
-            </p>
+            <div class="centered" id="content">
+                <p>
+                    Are you located in the Lothric area and in need of professional, quality photography? 
+                    Are you looking to capture your next wedding, graduation, or boss fight? 
+                    Are you in need of an affordable, dependable lensman who won’t drain you of your souls? 
+                    Well, you’ve come to the right place!
+                </p>
 
-            <h3>Undead Settlement Photography: You Will Not Be Disappointed!®</h3>
+                <!-- TODO: make this not look like ass -->
+                <div class="slideshow">
+                    <img class="slide" src="screenshots/home_sc1.jpg">
+                    <img class="slide" src="screenshots/home_sc2.jpg">
+                    <img class="slide" src="screenshots/home_sc3.jpg">
+                    <img class="slide" src="screenshots/home_sc4.jpg">
+                    <img class="slide" src="screenshots/home_sc5.jpg">
+                    <img class="slide" src="screenshots/home_sc6.jpg">
+                    <img class="slide" src="screenshots/home_sc7.jpg">
+                    <img class="slide" src="screenshots/home_sc8.jpg">
+                </div>
+
+                <p>
+                    Undead Settlement Photography is a local, 
+                    on-site photography company serving the greater Lothric area for over 300,000 cycles! 
+                    We are staffed by only the best, most dedicated craftsmen, 
+                    with an 100% No-Hollow Guarantee™! 
+                    And most of all, we strive to provide the highest quality of service that the Age of Fire has to offer! 
+                </p>
+
+                <h3>Undead Settlement Photography: You Will Not Be Disappointed!®</h3>
+            </div>
+
+            <div class="centered" id="footer">
+                <footer>
+                    <p>© Undead Settlement Photography, AOF 323,986</p>
+                </footer>
+            </div>
         </div>
-
-        <div class="centered" id="footer">
-            <footer>
-                <p>© Undead Settlement Photography, AOF 323,986</p>
-            </footer>
-        </div>
-
+        
         <script src="script.js"></script>
-
-        <script>
-            function deactivateActivePage(page) {
-                console.log("deactivate");
-                var ul = document.getElementById("navbar_ul");
-                var lines = ul.getElementsByClassName("li");
-
-                for (var i = 0; i < lines.length; i++) {
-                    if (page == lines[i]) {
-                        lines[i].classList.remove("active_page");
-                        break;
-                    }
-                }
-            }
-        </script>
     </body>
 </html>

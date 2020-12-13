@@ -7,51 +7,53 @@
     </head>
 
     <body>
-        <div class="centered" id="navbar">
-            <header>
-                <h1>Undead Settlement Photography</h1>
-            </header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="active_page"><a href="locations.html">Locations</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="pricing.html">Pricing</a></li>
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
-        </div>
+        <div class="page_wrapper">
+            <div class="centered" id="navbar">
+                <header>
+                    <h1>Undead Settlement Photography</h1>
+                </header>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active_page"><a href="locations.html">Locations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
 
-        <div class="centered" id="content">
-            <p>
-                Undead Settlement Photography has many locations in the Greater Lothric Area. 
-                Click on the map to see the closest location to you!
-            </p>
+            <div class="centered" id="content">
+                <p>
+                    Undead Settlement Photography has many locations in the Greater Lothric Area. 
+                    Click on the map to see the closest location to you!
+                </p>
 
-            <div class="location_wrapper">
-                <div class="image_map_container">
-                    <img src="screenshots/map.jpg" alt="Something went wrong!" usemap="#map" id="image_map_picture">
-                    <map name="map" id="image_map">
-                        <area shape="rect" coords="0, 0, 416, 270" alt="Lothric Castle" href="javascript:changeInfo('screenshots/locations_dragonbarracks.jpg');">
-                        <area shape="rect" coords="0, 270, 416, 430" alt="Undead Settlement" href="javascript:changeInfo('screenshots/locations_cliffunderside.jpg');">
-                        <area shape="rect" coords="0, 430, 416, 600" alt="Cathedral of the Deep" href="javascript:changeInfo('screenshots/locations_cleansingchapel.jpg');">
-                    </map>
-                </div>
+                <div class="location_wrapper">
+                    <div class="image_map_container">
+                        <img src="screenshots/map.jpg" alt="Something went wrong!" usemap="#map" id="image_map_picture">
+                        <map name="map" id="image_map">
+                            <area shape="rect" coords="0, 0, 416, 270" alt="Lothric Castle" href="javascript:changeInfo('screenshots/locations_dragonbarracks.jpg');">
+                            <area shape="rect" coords="0, 270, 416, 430" alt="Undead Settlement" href="javascript:changeInfo('screenshots/locations_cliffunderside.jpg');">
+                            <area shape="rect" coords="0, 430, 416, 600" alt="Cathedral of the Deep" href="javascript:changeInfo('screenshots/locations_cleansingchapel.jpg');">
+                        </map>
+                    </div>
 
-                <div class="locations_information">
-                    <img src="screenshots/locations_cleansingchapel.jpg" id="location_image">
-                    <p id="location_name"></p>
-                    <p id="location_address"></p>
-                    <p id="location_contactinfo"></p>
+                    <div class="locations_information">
+                        <img src="screenshots/locations_cleansingchapel.jpg" id="location_image">
+                        <p id="location_name"></p>
+                        <p id="location_address"></p>
+                        <p id="location_contactinfo"></p>
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="centered" id="footer">
-            <footer>
-                <p>© Undead Settlement Photography, AOF 323,986</p>
-            </footer>
+        
+            <div class="centered" id="footer">
+                <footer>
+                    <p>© Undead Settlement Photography, AOF 323,986</p>
+                </footer>
+            </div>
         </div>
 
         <script>
