@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond&display=swap');
 
 * {
     margin: 0px;
@@ -42,7 +43,8 @@ div.centered {
     padding: 4%;
     text-align: center;
     font-style: italic;
-    font-size: 40px;
+    font-size: 48px;
+    font-family: 'EB Garamond', sans-serif;
 }
 
 #navbar ul, li {
