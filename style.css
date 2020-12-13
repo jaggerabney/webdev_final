@@ -44,12 +44,22 @@ div.centered {
 #navbar ul {
     display: flex;
     justify-content: center;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
 
 #navbar ul li {
-    padding: 0 2%;
+    padding: 1% 2%;
     font-size: 18px;
+}
+
+#navbar ul li.active_page {
+    border: 1px solid rgb(100, 100, 100);
+    background-color: #c5c4ff;
+}
+
+#navbar ul li:hover {
+    border: 1px solid rgb(100, 100, 100);
+    background-color: rgb(215, 215, 215);
 }
 
 #content {

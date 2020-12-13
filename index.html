@@ -36,6 +36,9 @@
         <title>Undead Settlement Photography</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <style>
+
+        </style>
     </head>
 
     <body>
@@ -43,8 +46,8 @@
             <header>
                 <h1>Undead Settlement Photography</h1>
             </header>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+            <ul id="navbar_ul" onmouseover="console.log('bleh');" onmouseout="activateActivePage('About')">
+                <li class="active_page"><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="locations.html">Locations</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -93,5 +96,20 @@
         </div>
 
         <script src="script.js"></script>
+
+        <script>
+            function deactivateActivePage(page) {
+                console.log("deactivate");
+                var ul = document.getElementById("navbar_ul");
+                var lines = ul.getElementsByClassName("li");
+
+                for (var i = 0; i < lines.length; i++) {
+                    if (page == lines[i]) {
+                        lines[i].classList.remove("active_page");
+                        break;
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
