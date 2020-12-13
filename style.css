@@ -76,6 +76,16 @@ div.centered {
     margin: auto;
 }
 
+.about_image_wrapper {
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+}
+
+.about_image_wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
 div.slideshow img {
     width: 100%;
     display: block;
@@ -140,10 +150,20 @@ div.slideshow img {
     text-align: right;
 }
 
-.image_text_container img {
+#content .image_text_container p.about_right {
+    padding: 3% 3% 3% 0%;
+    width: 70%;
+}
+
+#content .image_text_container p.about_left {
+    padding: 3% 0% 3% 3%;
+    width: 70%;
+}
+.image_text_container div {
     width: 30%;
     height: auto;
-    padding: 0% 3%;
+    padding: 1%;
+    margin: 3%;
 }
 
 span.question {
