@@ -79,6 +79,17 @@ div.centered {
 .about_image_wrapper {
     background-color: rgb(227, 227, 227);
     border-radius: 10px;
+    margin: 3%;
+}
+
+.review_image_wrapper {
+    background-color: rgb(227, 227, 227);
+    border-radius: 10px;
+}
+
+.review_image_wrapper img {
+    height: 100%;
+    width: 100%;
 }
 
 .about_image_wrapper img {
@@ -143,11 +154,13 @@ div.slideshow img {
 #content .image_text_container p.right {
     padding: 3% 9% 3% 3%;
     text-align: left;
+    width: 70%;
 }
 
 #content .image_text_container p.left {
     padding: 3% 3% 3% 9%;
     text-align: right;
+    width: 70%;
 }
 
 #content .image_text_container p.about_right {
@@ -163,7 +176,6 @@ div.slideshow img {
     width: 30%;
     height: auto;
     padding: 1%;
-    margin: 3%;
 }
 
 span.question {
